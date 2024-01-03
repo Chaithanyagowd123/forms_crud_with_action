@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table Border="3px" align="center">
+        <tr>
+            <th>PK</th>
+            <th>name</th>
+            <th>DAte</th>
+            <th>author</th>
+         
+        </tr>
+
+    {% for to in accessrecords %}
+    <tr>
+        <td>{{ to.pk }}</td>
+        <td>{{ to.name }}</td>
+        <td>{{ to.Date }}</td>
+        <td>{{ to.author }}</td>
+      
+    </tr>
+
+    {% endfor %}
+
+
+    </table>
+    
+</body>
+</html>

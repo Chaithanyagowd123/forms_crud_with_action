@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table Border="3px" align="center">
+        <tr>
+            <th>PK</th>
+            <th>Topic_names</th>
+            <th>name</th>
+            <th>url</th>
+            <th>email</th>
+        </tr>
+
+    {% for to in webpages %}
+    <tr>
+        <td>{{to.pk}}</td>
+        <td>{{ to.topic_name }}</td>
+        <td>{{ to.name }}</td>
+        <td>{{ to.url }}</td>
+        <td>{{ to.email }}</td>
+
+    </tr>
+
+    {% endfor %}
+
+
+    </table>
+    
+</body>
+</html>
